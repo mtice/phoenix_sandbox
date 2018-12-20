@@ -1,0 +1,4 @@
+<div class="phx-hero">
+  <h2>Show me your <%= @messenger %>!</h2>
+  <h5>/templates/hello/show.html.eex</h5>
+</div>

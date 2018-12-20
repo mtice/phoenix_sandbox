@@ -7,4 +7,9 @@ defmodule HelloWeb.HelloController do
     # template in lib/hello_web/templates/hello
     render(conn, "index.html")
   end
+  # multiple binds can be like show(conn, %{"messenger" => messenger} = params)
+  def show(conn, %{"messenger" => messenger}) do
+    # /templates/hello/show.html.eex
+    render(conn, "show.html", messenger: messenger)
+  end
 end
