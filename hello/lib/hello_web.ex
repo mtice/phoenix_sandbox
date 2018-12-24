@@ -23,6 +23,9 @@ defmodule HelloWeb do
 
       import Plug.Conn
       import HelloWeb.Gettext
+      import HTTPoison.Base
+      import Poison
+      import Logger
       alias HelloWeb.Router.Helpers, as: Routes
     end
   end

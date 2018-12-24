@@ -1,6 +1,9 @@
 <section class="phx-hero">
   <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
   <p>A productive web framework that<br/>does not compromise speed and maintainability.</p>
+  <div class="home-link-div">
+    <a href="<%= Routes.hello_path(@conn, :index) %>">word api example</a>
+  </div>
 </section>
 
 <section class="row">

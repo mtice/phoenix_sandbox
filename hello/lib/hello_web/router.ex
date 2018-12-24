@@ -14,14 +14,14 @@ defmodule HelloWeb.Router do
   end
 
   # Full page layout: lib/hello_web/templates/layout/app.html.eex
+  # view route command **mix phx.routes**
   scope "/", HelloWeb do
     pipe_through :browser
-
+    # get is a macro.
+    # Below expands to def match(:get, "/", PageController, :index, [])
     get "/", PageController, :index
     get "/hello", HelloController, :index
-    # :messenger is an atom.
-    # Value with this key goes to HelloController :show action
-    get "/hello/:messenger", HelloController, :show
+    get "/hello/:text", HelloController, :show
   end
 
   # Other scopes may use custom stacks.

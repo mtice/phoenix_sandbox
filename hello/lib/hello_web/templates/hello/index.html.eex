@@ -1,4 +1,24 @@
 <div class="phx-hero">
-  <h2>Hello Template<h2>
+  <h2>Word Association Example<h2>
   <h5>/templates/hello/index.html.eex</h5>
+</div>
+<div class="data-display">
+  <h2>Usage:<h2>
+  <div class="usage">
+    <ul>
+      <li>/hello/:text <span>(where text is a word or phrase)</span></li>
+      <li>Replace {API-KEY-HERE} IN cofig.exs with your wordassociations api key.<span> (get <a href="https://api.wordassociations.net/auth/realms/api/protocol/openid-connect/auth?response_type=code&client_id=subscriptions&redirect_uri=https%3A%2F%2Fapi.wordassociations.net%2Fsubscriptions%2F&state=404%2Fec37730e-4eec-4d3e-8114-90ac0a15eaf0&login=true">here</a>)</span></li>
+    </ul>
+    <div class="usage--code">
+      <span> https://api.wordassociations.net/associations/v1.0/json/search/?</span></br>
+      apikey={API key} </br>
+      & text=:text</br>
+      & lang={language} </br>
+      & [type={result type}] </br>
+      & [limit={maximum number of results}] </br>
+      & [pos={parts of speech}] </br>
+      & [indent={yes or no}]
+    </div>
+    <p>DETAILS: <a href="https://wordassociations.net/en/api-doc">Word Associations API</a></p>
+  </div>
 </div>

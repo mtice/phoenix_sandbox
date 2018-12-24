@@ -1,4 +1,21 @@
 <div class="phx-hero">
-  <h2>Show me your <%= @messenger %>!</h2>
+  <h2>Give me your <%= @text%>!</h2>
   <h5>/templates/hello/show.html.eex</h5>
+  <div class="home-link-div">
+    <a href="<%= Routes.page_path(@conn, :index) %>">HOME</a>
+  </div>
+</div>
+<div class="data-display">
+  <h2>WORD DATA:<h2>
+  <div>
+    <%= for p <- @word_data do %>
+      <%= for item <- p do %>
+        <%= if(is_map(item) == true) do %>
+          <h5><span>ITEM: <%= get_in(item, ["item"])%></span>
+          <span>WEIGHT: <%= get_in(item, ["weight"])%></span>
+          <span>POS: <%= get_in(item, ["pos"])%></span></h5>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
 </div>

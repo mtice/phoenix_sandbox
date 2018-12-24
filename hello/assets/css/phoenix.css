@@ -49,6 +49,15 @@ select {
   background-color: #f2dede;
   border-color: #ebccd1;
 }
+.alert-danger__status-code {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  margin: 0 auto 2.0rem;
+  width: fit-content;
+  font-weight: bolder;
+  padding: 2px 8px;
+}
 .alert p {
   margin-bottom: 0;
 }
@@ -119,7 +128,68 @@ header nav ul {
 header nav a {
   display: block;
 }
+.data-display {
+  text-align: center;
+  border-bottom: 1px solid #e3e3e3;
+  background: #eee;
+  border-radius: 6px;
+  padding: 3em;
+  margin-bottom: 3rem;
+  font-weight: 200;
+  font-size: 120%;
+}
+.data-display p {
+  margin: 0;
+}
+.data-display a {
+  margin: 0;
+}
+.usage ul {
+  font-size: 18px;
+  text-align: left;
+}
 
+.usage span{
+  font-style: italic;
+}
+.usage .usage--code {
+  background: #F2F7FF;
+  text-align: left;
+  font-size: 24px;
+  padding: 8px;
+}
+.usage .usage--code span{
+  font-weight: bold;
+  font-size: 20px;
+
+}
+.home-link-div {
+  margin: 0;
+  padding: 0;
+}
+.home-link-div p {
+  margin: 0;
+}
+.home-link-div a {
+  margin: 0;
+}
+
+.error-response {
+  text-align: center;
+  border-bottom: 1px solid #e3e3e3;
+  background: #eee;
+  border-radius: 6px;
+  padding: 3em;
+  margin-bottom: 3rem;
+  font-weight: 200;
+  font-size: 120%;
+}
+.data-display p {
+  margin: 0;
+}
+.data-display a {
+  margin: 0;
+}
 @media (min-width: 40.0rem) { /* Small devices (landscape phones, 576px and up) */
   header section {
     flex-direction: row;

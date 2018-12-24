@@ -14,6 +14,7 @@ config :hello,
 config :hello, HelloWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "/qkrhiNXc6dQ8qKnC+5nwajQSAELiNRaBcpU/dxNR5VUs5+CiduexpNSMU5N99AU",
+  api_key: "{API-KEY-HERE}",
   render_errors: [view: HelloWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Hello.PubSub, adapter: Phoenix.PubSub.PG2]
 

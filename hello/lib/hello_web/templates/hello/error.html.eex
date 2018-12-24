@@ -1,0 +1,12 @@
+<div class="phx-hero">
+  <h2 class="alert-danger">Error Retrieving <%= @text%><h2>
+  <h5>/templates/hello/index.html.eex</h5>
+</div>
+<div class="error-response">
+  <h2>RESPONSE:<h2>
+  <h3 class="alert-danger__status-code"><%= @code%></h3>
+  <h4 class="alert-warning"><%= @error_message%></h4>
+</div>
+<div class="home-link-div">
+  <a href="<%= Routes.page_path(@conn, :index) %>">Index Link using page_path()</a>
+</div>
