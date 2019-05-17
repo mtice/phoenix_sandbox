@@ -7,6 +7,7 @@ defmodule HelloWeb.HelloController do
   end
 
   def show(conn, %{"text" => text}) do
+
     # /templates/hello/show.html.eex
     api_key = Application.get_env(:hello, HelloWeb.Endpoint)[:api_key]
     input_params = conn.params
@@ -19,7 +20,6 @@ defmodule HelloWeb.HelloController do
           {"indent", ""}
         ]
     merged_params = make_params(default_params, input_params)
-
 
     url = "https://api.wordassociations.net/associations/v1.0/json/search/"
     case HTTPoison.get(url, [], [params: merged_params] ) do

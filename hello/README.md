@@ -12,6 +12,21 @@ Start up:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
+I documented all issues I had while setting up in the [NOTES.md](../NOTES.md) file.
+
+## USAGE
+### ! Before this will work, you need an api key from [Word Associations API](https://wordassociations.net/en/api) site. Place it in the [config file](config/config.exs) on line 17.
+
+Find word associations with any word with path below:
+
+[`localhost:4000/hello/{word}`](http://localhost:4000/hello/{word})
+
+Example with `/hello/popcorn`:
+![http://localhost:4000/hello/popcorn](resources/popcorn.png)
+
+
+
+
 
 ## PHOENIX LINKS
 
